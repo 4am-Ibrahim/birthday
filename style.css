@@ -322,9 +322,19 @@ gap:35px;
 }
 
 .card{
-    overflow:visible !important;
-    background:white;
-    border-radius:20px;
+
+overflow:hidden;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.3);
+
+transition:.5s;
+
 }
 
 .card:hover{
@@ -336,14 +346,13 @@ box-shadow:0 25px 60px rgba(255,0,120,.3);
 }
 
 .card img{
-    display:block !important;
-    width:100% !important;
-    height:auto !important;
-    max-width:100% !important;
-    opacity:1 !important;
-    visibility:visible !important;
-    position:relative !important;
-    z-index:9999 !important;
+
+width:100%;
+
+display:block;
+
+transition:.6s;
+
 }
 
 .card:hover img{
