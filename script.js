@@ -194,9 +194,10 @@ const reveal = new IntersectionObserver((entries) => {
 
 sections.forEach(section => {
 
-    section.classList.add("fadeUp");
-
-    reveal.observe(section);
+    if(section.id !== "gallery"){
+        section.classList.add("fadeUp");
+        reveal.observe(section);
+    }
 
 });
 
